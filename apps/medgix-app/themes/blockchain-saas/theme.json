@@ -1,0 +1,10 @@
+{
+  "name": "Blockchain SaaS",
+  "version": "1.0",
+  "colors": {
+    "primary": "#3a86ff",
+    "secondary": "#8338ec",
+    "accent": "#ff006e"
+  },
+  "features": ["web3", "smart-contracts", "nft-integration"]
+}

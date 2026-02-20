@@ -1,0 +1,67 @@
+-----------------------------------------------------------------------------------------
+Version 1.0.4 - November 27, 2025
+-----------------------------------------------------------------------------------------
+- Full Compatibility with Elementor 3.33.2
++ UPDATE: Case Addons plugin - v1.3.0
++ ADDED: Lazy Loading Images
++ FIXED: Bugs
+
+
+
+-----------------------------------------------------------------------------------------
+Version 1.0.3 - October 01, 2025
+-----------------------------------------------------------------------------------------
+
++ ADDED: Home E-commerce Chatbot Saas
++ ADDED: Header Layout
++ ADDED: Footer Layout
++ ADDED: Button Widget Style
++ ADDED: Tabs Widget Style
++ ADDED: Image Box Widget Style
++ ADDED: Banner Box Sticky Widget Style
++ ADDED: Testimonial Marquee Widget Style
++ ADDED: Pricing Widget Style
++ ADDED: Accordion Widget Style
++ ADDED: Counter Widget Style
++ ADDED: Child Theme
++ FIXED: Bugs
+
+
+-----------------------------------------------------------------------------------------
+Version 1.0.2 - August 28, 2025
+-----------------------------------------------------------------------------------------
+
++ ADDED: Home Fintech Saas
++ ADDED: Header Layout
++ ADDED: Footer Layout
++ ADDED: Process Widget Style
++ ADDED: Chart Widget Style
++ ADDED: Image Box Widget Style
++ ADDED: Banner Box Sticky Widget Style
++ ADDED: Testimonial Marquee Widget Style
++ ADDED: Pricing Widget Style
++ ADDED: Accordion Widget Style
++ ADDED: Counter Widget Style
++ FIXED: Bugs
+
+
+-----------------------------------------------------------------------------------------
+Version 1.0.1 - August 13, 2025
+-----------------------------------------------------------------------------------------
+
++ ADDED: Home Company SaaS
++ ADDED: Header Layout
++ ADDED: Footer Layout
++ ADDED: Counter Widget Style
++ ADDED: Banner Box Widget Style
++ ADDED: Service Slider Widget Style
++ ADDED: Video Player Widget Style
++ ADDED: Team Grid Widget Style
++ FIXED: Bugs
+
+
+-----------------------------------------------------------------------------------------
+Version 1.0.0 - July 10, 2025
+-----------------------------------------------------------------------------------------
+
+- Initial release

@@ -1,0 +1,22 @@
+/*
+Theme Name: MarketingTool Pro
+Theme URI: https://marketingtool.pro
+Author: MarketingTool Team
+Description: Professional Marketing Automation Theme
+Version: 1.0.0
+License: GPL v2 or later
+Text Domain: marketingtool-pro
+*/
+
+/* Import BrightHub styles */
+@import url('css/style.css');
+@import url('css/responsive.css');
+
+/* Custom MarketingTool Pro styles */
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Additional custom styles */

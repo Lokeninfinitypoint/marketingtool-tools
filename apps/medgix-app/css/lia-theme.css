@@ -1,0 +1,76 @@
+/* lia-theme.css */
+:root {
+  /* Primary Colors */
+  --primary: #00d4ff;
+  --primary-dark: #0099cc;
+  --primary-light: #80e9ff;
+  
+  /* Accent Colors */
+  --accent: #ff6b35;
+  --accent-dark: #cc552b;
+  --accent-light: #ffb59a;
+  
+  /* Backgrounds */
+  --bg-dark: #000000;
+  --bg-card: #0a0a0a;
+  --bg-section: #050505;
+  
+  /* Text */
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --text-muted: #808080;
+  
+  /* Borders */
+  --border-dark: #1a1a1a;
+  --border-light: #2a2a2a;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  --gradient-accent: linear-gradient(135deg, var(--accent), var(--primary));
+  
+  /* Typography */
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* Apply to all pages */
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+/* Small logo style */
+.logo {
+  width: 35px;
+  height: 35px;
+  background: var(--gradient-primary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+  border-radius: 50px;
+  padding: 12px 30px;
+  transition: var(--transition-medium);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}

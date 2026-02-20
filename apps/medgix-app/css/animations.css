@@ -1,0 +1,104 @@
+/* animations.css */
+
+/* Base Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes staggerFade {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Component Animations */
+.feature-card {
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+}
+
+/* Hero Animation */
+.hero-title {
+  animation: fadeIn 1s ease forwards;
+}
+
+.hero-subtitle {
+  animation: fadeIn 1s ease 0.5s forwards;
+}
+
+.hero-cta {
+  animation: fadeIn 1s ease 1s forwards;
+}
+
+/* Stats Counter */
+.stat-number {
+  transition: all 1s ease-out;
+}
+
+/* Template Selection */
+.template-card {
+  transition: all 0.3s ease;
+}
+
+.template-card:hover {
+  transform: rotate(-2deg) scale(1.05);
+}
+
+/* Form Steps */
+.form-section {
+  animation: slideUp 0.5s ease forwards;
+}
+
+/* 3D Preview */
+.ad-preview {
+  transition: transform 0.5s ease;
+}
+
+.ad-preview:hover {
+  transform: perspective(1000px) rotateY(10deg);
+}
+
+/* Loading Animations */
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Button Effects */
+.btn-gradient {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-gradient:hover::before {
+  left: 100%;
+}

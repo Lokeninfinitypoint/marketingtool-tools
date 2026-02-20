@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ad Launcher - MarketingTool Pro</title>
+    <meta name="description" content="Create and launch high-converting ads in seconds with AI-powered ad creation platform.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #8b5cf6;
+            --accent-color: #ec4899;
+            --dark-bg: #0a0a0a;
+            --dark-card: #1a1a1a;
+            --dark-section: #111111;
+            --dark-border: #2a2a2a;
+            --text-primary: #ffffff;
+            --text-secondary: #9ca3af;
+            --text-muted: #6b7280;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Header Styles - Same as homepage */
+        .header {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--dark-border);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(10, 10, 10, 0.98);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-icon::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+            transform: translateX(-100%);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            100% { transform: translateX(100%); }
+        }
+
+        .logo-text {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--text-secondary) !important;
+            font-weight: 500;
+            margin: 0 15px;
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0 !important;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            transition: width 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .btn-gradient {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-gradient::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-gradient:hover::before {
+            left: 100%;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.4);
+            color: white;
+        }
+
+        /* Page Header */
+        .page-header {
+            padding: 150px 0 80px;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-section) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 20%, var(--primary-color) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, var(--secondary-color) 0%, transparent 50%);
+            opacity: 0.1;
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.1; }
+            50% { transform: scale(1.1); opacity: 0.2; }
+        }
+
+        .page-title {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Ad Creator Section */
+        .ad-creator {
+            padding: 80px 0;
+            background: var(--dark-section);
+        }
+
+        .creator-interface {
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .step-indicator {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .step-indicator::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--dark-border);
+            z-index: 0;
+        }
+
+        .step {
+            width: 40px;
+            height: 40px;
+            background: var(--dark-bg);
+            border: 2px solid var(--dark-border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .step.active {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        .step.completed {
+            background: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: white;
+        }
+
+        .form-section {
+            display: none;
+        }
+
+        .form-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .form-control-dark {
+            background: var(--dark-bg);
+            border: 1px solid var(--dark-border);
+            color: var(--text-primary);
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control-dark:focus {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+            color: var(--text-primary);
+        }
+
+        .form-label {
+            color: var(--text-secondary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Creative Templates */
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .template-card {
+            background: var(--dark-bg);
+            border: 2px solid var(--dark-border);
+            border-radius: 15px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .template-card:hover,
+        .template-card.selected {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+        }
+
+        .template-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        /* Ad Preview */
+        .ad-preview {
+            background: white;
+            color: #333;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .ad-preview-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .ad-preview-avatar {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+
+        .ad-preview-body {
+            margin-bottom: 1rem;
+        }
+
+        .ad-preview-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .ad-preview-cta {
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 80px 0;
+            background: var(--dark-bg);
+        }
+
+        .feature-box {
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 15px;
+            padding: 2rem;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            text-align: center;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-card);
+            border-top: 1px solid var(--dark-border);
+            padding: 60px 0 30px;
+        }
+
+        .footer-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2.5rem;
+            }
+
+            .creator-interface {
+                padding: 2rem 1.5rem;
+            }
+
+            .template-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="/" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-chart-line text-white fs-4"></i>
+                    </div>
+                    <span class="logo-text">MarketingTool Pro</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#platform">Platform</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/signup" class="btn-gradient ms-3">Start Free Trial</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="page-title">
+                        AI Ad <span class="gradient-text">Launcher</span>
+                    </h1>
+                    <p class="fs-5 text-secondary mb-4">
+                        Create high-converting ads in seconds with our AI-powered ad creation platform. 
+                        From concept to campaign launch in minutes, not hours.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#creator" class="btn-gradient btn-lg">
+                            <i class="fas fa-rocket me-2"></i>Create Ad Now
+                        </a>
+                        <a href="#demo" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-play-circle me-2"></i>Watch Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/67447c5926c2d69a899dc13e_analytics.avif" 
+                         alt="Ad Creator Interface" 
+                         class="img-fluid rounded-4 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Creator Section -->
+    <section class="ad-creator" id="creator">
+        <div class="container">
+            <div class="creator-interface" data-aos="fade-up">
+                <!-- Step Indicator -->
+                <div class="step-indicator">
+                    <div class="step active" id="step1">1</div>
+                    <div class="step" id="step2">2</div>
+                    <div class="step" id="step3">3</div>
+                    <div class="step" id="step4">4</div>
+                </div>
+
+                <!-- Step 1: Choose Template -->
+                <div class="form-section active" id="form-step-1">
+                    <h3 class="mb-4">Choose Your Ad Template</h3>
+                    <div class="template-grid">
+                        <div class="template-card" onclick="selectTemplate('single-image')">
+                            <div class="template-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <h5>Single Image</h5>
+                            <p class="text-muted">Classic image ad</p>
+                        </div>
+                        <div class="template-card" onclick="selectTemplate('carousel')">
+                            <div class="template-icon">
+                                <i class="fas fa-images"></i>
+                            </div>
+                            <h5>Carousel</h5>
+                            <p class="text-muted">Show multiple images</p>
+                        </div>
+                        <div class="template-card" onclick="selectTemplate('video')">
+                            <div class="template-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h5>Video</h5>
+                            <p class="text-muted">Engaging video ad</p>
+                        </div>
+                        <div class="template-card" onclick="selectTemplate('stories')">
+                            <div class="template-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h5>Stories</h5>
+                            <p class="text-muted">Full-screen stories</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Ad Details -->
+                <div class="form-section" id="form-step-2">
+                    <h3 class="mb-4">Ad Details</h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Campaign Objective</label>
+                            <select class="form-control form-control-dark">
+                                <option>Conversions</option>
+                                <option>Traffic</option>
+                                <option>Engagement</option>
+                                <option>Brand Awareness</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Budget</label>
+                            <input type="number" class="form-control form-control-dark" placeholder="$100">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label class="form-label">Headline</label>
+                            <input type="text" class="form-control form-control-dark" placeholder="Attention-grabbing headline">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label class="form-label">Ad Copy</label>
+                            <textarea class="form-control form-control-dark" rows="4" placeholder="Compelling ad description..."></textarea>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label class="form-label">Call to Action</label>
+                            <select class="form-control form-control-dark">
+                                <option>Shop Now</option>
+                                <option>Learn More</option>
+                                <option>Sign Up</option>
+                                <option>Download</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Visuals -->
+                <div class="form-section" id="form-step-3">
+                    <h3 class="mb-4">Add Your Visuals</h3>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="border-dashed rounded-3 p-5 text-center" style="border: 2px dashed var(--dark-border);">
+                                <i class="fas fa-cloud-upload-alt fs-1 text-primary mb-3"></i>
+                                <h5>Upload Images or Videos</h5>
+                                <p class="text-muted">Drag and drop files here or click to browse</p>
+                                <button class="btn btn-outline-primary">Choose Files</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-dark rounded-3 p-3">
+                                <h6 class="mb-3">AI Suggestions</h6>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-magic text-primary me-2"></i>
+                                    <small>Auto-generate visuals</small>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-palette text-primary me-2"></i>
+                                    <small>Color optimization</small>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-crop text-primary me-2"></i>
+                                    <small>Smart cropping</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Review & Launch -->
+                <div class="form-section" id="form-step-4">
+                    <h3 class="mb-4">Review & Launch</h3>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="ad-preview">
+                                <div class="ad-preview-header">
+                                    <div class="ad-preview-avatar"></div>
+                                    <div>
+                                        <strong>MarketingTool Pro</strong>
+                                        <div class="text-muted">Sponsored</div>
+                                    </div>
+                                </div>
+                                <div class="ad-preview-body">
+                                    <strong>Your Headline Here</strong>
+                                    <p>Your ad copy will appear here. Make it compelling and action-oriented!</p>
+                                </div>
+                                <img src="https://via.placeholder.com/600x400" alt="Ad preview" class="ad-preview-image">
+                                <div class="ad-preview-cta">Shop Now</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-dark rounded-3 p-3 mb-3">
+                                <h6>Campaign Summary</h6>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <small class="text-muted">Objective:</small>
+                                    <small>Conversions</small>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <small class="text-muted">Budget:</small>
+                                    <small>$100/day</small>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-muted">Duration:</small>
+                                    <small>7 days</small>
+                                </div>
+                            </div>
+                            <div class="alert alert-success">
+                                <i class="fas fa-check-circle me-2"></i>
+                                Ready to launch!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="d-flex justify-content-between mt-5">
+                    <button class="btn btn-outline-light" onclick="previousStep()" id="prevBtn" style="display:none;">
+                        <i class="fas fa-arrow-left me-2"></i>Previous
+                    </button>
+                    <button class="btn-gradient ms-auto" onclick="nextStep()" id="nextBtn">
+                        Next<i class="fas fa-arrow-right ms-2"></i>
+                    </button>
+                    <button class="btn-gradient btn-success ms-auto" onclick="launchAd()" id="launchBtn" style="display:none;">
+                        <i class="fas fa-rocket me-2"></i>Launch Campaign
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">
+                    Powerful <span class="gradient-text">Ad Creation</span> Features
+                </h2>
+                <p class="text-secondary fs-5">Everything you need to create ads that convert</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h4>AI-Powered Copy</h4>
+                        <p class="text-secondary">Generate compelling ad copy instantly with our AI copywriter. Tested formulas that convert.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4>Smart Design</h4>
+                        <p class="text-secondary">Automatically optimize your visuals for maximum impact across all placements and devices.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h4>Targeting Assistant</h4>
+                        <p class="text-secondary">AI-powered audience targeting to reach the right customers at the right time.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Performance Prediction</h4>
+                        <p class="text-secondary">Get AI predictions on how your ads will perform before you spend a dollar.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-sync"></i>
+                        </div>
+                        <h4>A/B Testing</h4>
+                        <p class="text-secondary">Automatically test multiple variations to find your best-performing ads.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>One-Click Launch</h4>
+                        <p class="text-secondary">Launch your campaigns across multiple platforms with a single click.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="zoom-in">
+                    <h2 class="display-4 fw-bold mb-4 text-white">
+                        Ready to Create Ads That <span class="text-decoration-underline">Convert</span>?
+                    </h2>
+                    <p class="fs-5 mb-4 text-white-50">
+                        Join thousands of marketers creating high-performing ads with AI.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="/signup" class="btn btn-light btn-lg">
+                            Start Creating Free
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">
+                            Talk to Sales
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="logo-icon">
+                            <i class="fas fa-chart-line text-white fs-4"></i>
+                        </div>
+                        <span class="logo-text fs-4">MarketingTool Pro</span>
+                    </div>
+                    <p class="text-secondary mb-3">The AI-powered marketing automation platform that delivers results.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-secondary fs-5"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-secondary fs-5"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-secondary fs-5"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-secondary fs-5"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Product</h6>
+                    <a href="#features" class="footer-link d-block mb-2">Features</a>
+                    <a href="#pricing" class="footer-link d-block mb-2">Pricing</a>
+                    <a href="#api" class="footer-link d-block mb-2">API</a>
+                    <a href="#integrations" class="footer-link d-block mb-2">Integrations</a>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Company</h6>
+                    <a href="/about" class="footer-link d-block mb-2">About Us</a>
+                    <a href="/blog" class="footer-link d-block mb-2">Blog</a>
+                    <a href="/careers" class="footer-link d-block mb-2">Careers</a>
+                    <a href="/contact" class="footer-link d-block mb-2">Contact</a>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Resources</h6>
+                    <a href="/docs" class="footer-link d-block mb-2">Documentation</a>
+                    <a href="/tutorials" class="footer-link d-block mb-2">Tutorials</a>
+                    <a href="/webinars" class="footer-link d-block mb-2">Webinars</a>
+                    <a href="/support" class="footer-link d-block mb-2">Support</a>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Legal</h6>
+                    <a href="/privacy" class="footer-link d-block mb-2">Privacy Policy</a>
+                    <a href="/terms" class="footer-link d-block mb-2">Terms of Service</a>
+                    <a href="/cookies" class="footer-link d-block mb-2">Cookie Policy</a>
+                    <a href="/gdpr" class="footer-link d-block mb-2">GDPR</a>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center">
+                <p class="text-secondary mb-0">&copy; 2025 MarketingTool Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Current step
+        let currentStep = 1;
+        const totalSteps = 4;
+
+        // Template selection
+        function selectTemplate(template) {
+            // Remove selected class from all templates
+            document.querySelectorAll('.template-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            
+            // Add selected class to clicked template
+            event.currentTarget.classList.add('selected');
+            
+            // Store template selection
+            localStorage.setItem('selectedTemplate', template);
+        }
+
+        // Next step
+        function nextStep() {
+            if (currentStep < totalSteps) {
+                // Hide current step
+                document.getElementById(`form-step-${currentStep}`).classList.remove('active');
+                document.getElementById(`step${currentStep}`).classList.remove('active');
+                document.getElementById(`step${currentStep}`).classList.add('completed');
+                
+                currentStep++;
+                
+                // Show next step
+                document.getElementById(`form-step-${currentStep}`).classList.add('active');
+                document.getElementById(`step${currentStep}`).classList.add('active');
+                
+                // Update buttons
+                updateButtons();
+            }
+        }
+
+        // Previous step
+        function previousStep() {
+            if (currentStep > 1) {
+                // Hide current step
+                document.getElementById(`form-step-${currentStep}`).classList.remove('active');
+                document.getElementById(`step${currentStep}`).classList.remove('active');
+                
+                currentStep--;
+                
+                // Show previous step
+                document.getElementById(`form-step-${currentStep}`).classList.add('active');
+                document.getElementById(`step${currentStep}`).classList.add('active');
+                document.getElementById(`step${currentStep}`).classList.remove('completed');
+                
+                // Update buttons
+                updateButtons();
+            }
+        }
+
+        // Update navigation buttons
+        function updateButtons() {
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const launchBtn = document.getElementById('launchBtn');
+            
+            // Show/hide previous button
+            if (currentStep === 1) {
+                prevBtn.style.display = 'none';
+            } else {
+                prevBtn.style.display = 'block';
+            }
+            
+            // Show/hide next or launch button
+            if (currentStep === totalSteps) {
+                nextBtn.style.display = 'none';
+                launchBtn.style.display = 'block';
+            } else {
+                nextBtn.style.display = 'block';
+                launchBtn.style.display = 'none';
+            }
+        }
+
+        // Launch ad
+        function launchAd() {
+            alert('Campaign launched successfully! 🚀');
+            // Redirect to dashboard or campaigns page
+            window.location.href = '/dashboard';
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

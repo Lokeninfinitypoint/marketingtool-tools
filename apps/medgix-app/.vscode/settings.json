@@ -1,0 +1,7 @@
+{
+    "markdown.validate.enabled": true,
+    "yaml.schemas": {
+        "https://gitlab.com/appsemble/appsemble/-/raw/HEAD/packages/cli/assets/appsemblerc.schema.json": "file:///Users/loken/medgix-app--2/complete-docker-stack.yml"
+    },
+    "git.ignoreLimitWarning": true
+}

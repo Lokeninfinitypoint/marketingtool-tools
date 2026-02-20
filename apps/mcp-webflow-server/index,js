@@ -1,0 +1,53 @@
+const express = require("express");
+
+const app = express();
+app.use(express.json());
+
+const WEBFLOW_TOKEN = process.env.WEBFLOW_TOKEN;
+
+if (!WEBFLOW_TOKEN) {
+  console.error("Missing WEBFLOW_TOKEN in environment variables.");
+  process.exit(1);
+}
+
+app.post("/rpc", async (req, res) => {
+  const { method, id } = req.body;
+
+  try {
+    switch (method) {
+      case "listSites": {
+        const response = await fetch("https://api.webflow.com/sites", {
+          headers: {
+            Authorization: `Bearer ${WEBFLOW_TOKEN}`,
+            Accept: "application/json",
+          },
+        });
+
+        if (!response.ok) {
+          throw new Error(`Webflow error: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        return res.json({ jsonrpc: "2.0", id, result: data });
+      }
+
+      default:
+        return res.json({
+          jsonrpc: "2.0",
+          id,
+          error: { code: -32601, message: "Method not found" },
+        });
+    }
+  } catch (err) {
+    console.error("Error:", err.message);
+    return res.json({
+      jsonrpc: "2.0",
+      id,
+      error: { code: -32000, message: err.message },
+    });
+  }
+});
+
+app.listen(3000, () => {
+  console.log("MCP Webflow server running on port 3000");
+});

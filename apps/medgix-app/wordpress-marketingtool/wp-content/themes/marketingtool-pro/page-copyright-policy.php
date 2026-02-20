@@ -1,0 +1,530 @@
+<?php
+/**
+ * Template Name: Copyright-Policy
+ */
+get_header();
+?>
+
+<div class="page-content">
+<!DOCTYPE html><!-- Last Published: Wed Dec 17 2025 16:15:56 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="marketingtool.pro" data-wf-page="63d0008b9ebdd156c967c354" data-wf-site="614069317241cba124a0dd3b" lang="en"><head><meta charset="utf-8"/><title>Copyright Policy</title><meta content="Copyright Policy" property="og:title"/><meta content="Copyright Policy" property="twitter:title"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/css/MarketingTool Pro-dev.webflow.shared.7e13e4a7c.min.css" rel="stylesheet" type="text/css"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/66a94c934a72a60e59cbfedc_Favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/66a94c9835325d4d67d67d8a_Webclip.png" rel="apple-touch-icon"/><link href="copyright-policy.html" rel="canonical"/><meta name="robots" content="max-image-preview:large">
+
+<!-- Custom Styles -->
+<style>
+  ::selection {color: #fff; background: #515fbc;}
+  input {caret-color: #515FBC;}
+  .cookie {-webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);}
+</style>
+
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://global-uploads.webflow.com">
+<link rel="preconnect" href="https://uploads-ssl.webflow.com">
+
+
+<!-- Google Tag Manager -->
+<script async>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                                                            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                                  })(window,document,'script','dataLayer','GTM-M53Z3L4');
+</script>
+
+<!-- Finsweet Cookie Consent -->
+<script async src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js" fs-cc-mode="informational"></script>
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Corporation",
+  "name": "MarketingTool Pro",
+  "url": "https://marketingtool.pro/",
+  "logo": "https://cdn.prod.website-files.com/614069317241cba124a0dd3b/614069317241cb1c7ea0dd5f_logo-MarketingTool Pro.svg",
+  "sameAs": [
+    "https://www.linkedin.com/company/MarketingTool Pronow/",
+    "https://www.instagram.com/MarketingTool Pro/",
+    "https://www.youtube.com/channel/UC_WfUNzWxQV3kQMT0hxsYTw",
+    "https://www.facebook.com/MarketingTool Prodotcom",
+    "https://twitter.com/MarketingTool Pro"
+  ]
+}
+</script>
+
+<!-- Website schema -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "MarketingTool Pro",
+      "url": "https://marketingtool.pro/",
+      "potentialAction": [{
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://marketingtool.pro/search?query={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }]
+    }
+</script>
+<script
+  defer
+  data-website-id="dfid_NC67qy9RNCW38lzpTDJUr"
+  data-domain="marketingtool.pro"
+  src="https://datafa.st/js/script.js">
+</script>
+<script id="datafast-queue">
+  window.datafast = window.datafast || function() {
+    window.datafast.q = window.datafast.q || [];
+    window.datafast.q.push(arguments);
+  };
+</script></head><body><div class="page-wrapper"><div class="hide w-embed"><style>
+
+  /* Make text look crisper and more legible in all browsers */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Focus state style for keyboard navigation for the focusable elements */
+  *[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+    outline: 0.125rem solid #4d65ff;
+    outline-offset: 0.125rem;
+  }
+
+  /* Get rid of top margin on first element in any rich text element */
+  .w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+    margin-top: 0 !important;
+  }
+
+  /* Get rid of bottom margin on last element in any rich text element */
+  .w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Prevent all click and hover interaction with an element */
+  .pointer-events-off {
+    pointer-events: none;
+  }
+
+  /* Enables all click and hover interaction with an element */
+  .pointer-events-on {
+    pointer-events: auto;
+  }
+
+  /* Create a class of .div-square which maintains a 1:1 dimension of a div */
+  .div-square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  /* Make sure containers never lose their center alignment */
+  .container-medium,.container-small, .container-large {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  /* 
+  Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+  Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+  Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+  */
+  /*
+  a,
+  .w-input,
+  .w-select,
+  .w-tab-link,
+  .w-nav-link,
+  .w-dropdown-btn,
+  .w-dropdown-toggle,
+  .w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+  }
+  */
+
+  /* Apply "..." after 3 lines of text */
+  .text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  /* Apply "..." after 2 lines of text */
+  .text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  /* Apply "..." after 1 line of text */
+  .text-style-1line {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  /* Adds inline flex display */
+  .display-inlineflex {
+    display: inline-flex;
+  }
+
+  /* These classes are never overwritten */
+  .hide {
+    display: none !important;
+  }
+
+  @media screen and (max-width: 991px), 
+    @media screen and (max-width: 767px), 
+    @media screen and (max-width: 479px){
+      .hide, .hide-tablet{
+        display: none !important;
+      }
+  }
+  @media screen and (max-width: 767px)
+    .hide-mobile-landscape{
+      display: none !important;
+  }
+  }
+  @media screen and (max-width: 479px)
+    .hide-mobile{
+      display: none !important;
+  }
+  }
+
+  .margin-0 {
+    margin: 0rem !important;
+  }
+
+  .padding-0 {
+    padding: 0rem !important;
+  }
+
+  .spacing-clean {
+    padding: 0rem !important;
+    margin: 0rem !important;
+  }
+
+  .margin-top {
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-top {
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .margin-right {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-right {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .margin-bottom {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-bottom {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .margin-left {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .padding-left {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  .margin-horizontal {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .padding-horizontal {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  .margin-vertical {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-vertical {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  /* Fluid font size
+  html { font-size: calc(0.625rem + 0.41666666666666663vw); }
+  @media screen and (max-width:1920px) { html { font-size: calc(0.625rem + 0.41666666666666674vw); } }
+  @media screen and (max-width:1440px) { html { font-size: calc(0.8126951092611863rem + 0.20811654526534862vw); } }
+  @media screen and (max-width:479px) { html { font-size: calc(0.7494769874476988rem + 0.8368200836820083vw); } }
+  */
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    color: #fff; background: #515FBC;
+  }
+
+  .form__input {
+    caret-color: #515FBC;
+  }
+
+  ul {
+    list-style-image: url("https://cdn.prod.website-files.com/63f5f6fbcca22e548f7a53ec/64130cc9d6c9639b936987ca_634e7774ba659221379f7a8c_ul-ico.svg");
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* Apply "..." after 1 line of text */
+  .footer_link {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+</style>
+
+<style>
+  @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  .animated-button::after, .animated-button::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 50%, #917aff);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 1px;
+    border-radius: 999px;
+    animation: 3s spin linear infinite;
+  }
+  .animated-button::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+  }
+  @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
+</style>
+
+<style>
+  @property --angleScreen{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  @property --angleScreenTwo{
+    syntax: "<angle>";
+    initial-value: 360deg;
+    inherits: false;
+  }
+
+  .animated-screen::after, .animated-screen::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 1px;
+    border-radius: 40px;
+  }
+
+  .animated-screen::after{
+    background-image: conic-gradient(from var(--angleScreen), transparent 95%, #cab7ff);
+    animation: 9s spinScreen linear infinite;
+  }
+
+  .animated-screen::before{
+    background-image: conic-gradient(from var(--angleScreenTwo), #cab7ff, transparent 5%);
+    animation: 9s spinScreenTwo linear infinite;
+  }
+
+  @keyframes spinScreen{
+    from{
+      --angleScreen: 0deg;
+    }
+    to{
+      --angleScreen: 360deg;
+    }
+  }
+
+  @keyframes spinScreenTwo{
+    from{
+      --angleScreenTwo: 360deg;
+    }
+    to{
+      --angleScreenTwo: 0deg;
+    }
+  }
+  @media screen and (max-width: 991px) {
+  }
+
+  @media screen and (max-width: 767px) {
+    .animated-screen::after, .animated-screen::before{
+      border-radius: 24px;
+    }
+  }
+
+  @media screen and (max-width: 478px) {
+  }
+
+  .w-editor h1,
+  .w-editor h2,
+  .w-editor h3,
+  .w-editor h4,
+  .w-editor h5,
+  .w-editor h6 {
+    background-image: none;
+    background-clip: border-box;
+    color: inherit; /* Uses parent’s text color */
+    text-fill-color: initial; /* Ensure text is filled */
+    -webkit-text-fill-color: initial;
+  }
+</style></div><div class="nav-spacer"></div><div class="nav2_component"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav2_padding w-nav"><div class="nav2_container w-container"><div class="nav2_brand"><a href="index.html" class="nav2_brand-link w-nav-brand"><img src="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/673514528c96cad5a7a1e69a_MarketingTool Pro-web-logo.png" loading="lazy" alt="Logo" height="Auto" class="nav2_image"/></a></div><nav role="navigation" class="nav2_menuu w-nav-menu"><div class="nav2_linkss"><a href="index.html" class="nav2_link w-nav-link">Home</a><a href="services.html" class="nav2_link w-nav-link">Services</a><div data-hover="false" data-delay="0" class="nav2_dropdown w-dropdown"><div class="nav2_dropdown_toggle w-dropdown-toggle"><div>Resources</div><svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 10 6" fill="none" class="nav2_chevron"><path d="M1.66602 1.33325L4.70472 4.37196C4.86744 4.53468 5.13126 4.53468 5.29398 4.37196L8.33268 1.33325" stroke="currentColor" stroke-opacity="0.48" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><nav class="nav2_dropdown_list w-dropdown-list"><div class="nav2_workflow"><a href="resources/ppc-research.html" class="nav2_workflow_link w-inline-block"><div class="nav2_workflow_title">PPC Research & Insights</div><div class="nav2_workflow_par">Read original PPC research and insights</div></a><a href="resources/account-audit.html" class="nav2_workflow_link w-inline-block"><div class="nav2_workflow_title">Account Audit Report</div><div class="nav2_workflow_par">Get your free PPC audit</div></a><a href="resources/free-reporting.html" class="nav2_workflow_link w-inline-block"><div class="nav2_workflow_title">Free Reporting</div><div class="nav2_workflow_par">Test-drive our free reporting</div></a><a href="resources/free-tools.html" class="nav2_workflow_link w-inline-block"><div class="nav2_workflow_title">Free Tools</div><div class="nav2_workflow_par">Discover our free tools</div></a></div></nav></div><a href="blog.html" class="nav2_link w-nav-link">Blog</a><div data-hover="false" data-delay="0" class="nav2_dropdown w-dropdown"><div class="nav2_dropdown_toggle w-dropdown-toggle"><div>Company</div><svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 10 6" fill="none" class="nav2_chevron"><path d="M1.66602 1.33325L4.70472 4.37196C4.86744 4.53468 5.13126 4.53468 5.29398 4.37196L8.33268 1.33325" stroke="currentColor" stroke-opacity="0.48" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><nav class="nav2_dropdown_list w-dropdown-list"><div class="nav2_resources"><div class="nav_company-links"><a href="help-center.html" class="nav_sublink button w-button" style="margin-bottom:10px;">Help Center</a><a href="changelog.html" class="nav_sublink">Changelog</a><a href="affiliate-program.html" class="nav_sublink">Affiliate Program</a><a href="contact.html" class="nav_sublink">Contact Us</a><a href="pricing.html" class="nav_sublink">Pricing</a><a href="about-us.html" class="nav_sublink">About Us</a></div></div></nav></div><div class="nav2_mobile-buttons"><a href="free-trial.html" class="button is-100 w-button">Free Trial</a><a href="sign-in.html" class="nav2_link w-nav-link">Sign In</a></div></div></nav><div class="nav2_main-links"><a href="sign-in.html" class="nav2_link w-nav-link">Sign In</a><a href="free-trial.html" class="button w-button">Free Trial</a></div><div class="nav2_burger w-nav-button"><div class="button is-burger"><div class="nav2_lines"><div class="nav2_line"></div><div class="nav2_line"></div><div class="nav2_line"></div></div><div>Menu</div></div></div></div></div></div><main class="main-wrapper"><section><div class="padding-global"><div class="container-medium"><div class="padding-section-large"><div class="text-rich-text w-richtext"><h1>MarketingTool Pro Copyright Policy</h1><p><strong><em>Last Updated: January 24th, 2023</em></strong></p><p>MarketingTool Pro Ltd. (“<strong>MarketingTool Pro</strong>,” “<strong>we</strong>,” “<strong>our</strong>” or “<strong>us</strong>”) respects the intellectual property of others, and we ask our users to do the same.  Under appropriate circumstances, we may warn or suspend users who infringe others’ copyrights, and in more serious cases such as repeated infringement, we may permanently terminate user accounts.</p><h2>Submitting a Notice of Copyright Infringement</h2><p>Per the Digital Millennium Copyright Act, 17 U.S.C. § 512 (“<strong>DMCA</strong>”), if you believe that your work is accessible on our website located at <a href="https://www.marketingtool.pro/" target="_blank">www.marketingtool.pro</a> (“<strong>Website</strong>”), our platform accessible via our Website or our related offerings (collectively, the “<strong>Services</strong>”), in a way that you believe infringes your copyright rights, or that contains links or other references to a different online location containing material that you believe infringes your copyright rights, you may notify MarketingTool Pro by providing the following information in a written notice to our designated agent for copyright notices (“<strong>Designated Agent</strong>”). </p><p>Designated Agent for Copyright Notices</p><p>MarketingTool Pro Ltd.<br/>Medinat ha-Yehudim St. 91<br/>Herzliya, 4676673,  Israel <br/>Email: <a href="mailto:billing@marketingtool.pro">billing@marketingtool.pro</a>  (please begin email subject line with “DMCA”)<br/>Web:  <a href="https://www.marketingtool.pro/" target="_blank">www.marketingtool.pro</a> </p><p>Specific requirements for proper, valid notice are set forth in the DMCA.  <em>See</em> 17 U.S.C. § 512(c)(3).  A valid notice must include all of the following information:</p><ol start="" role="list"><li>Physical or electronic signature of the copyright owner or person authorized to act on behalf of the copyright owner;</li><li>Identification of the copyrighted work claimed to be infringed (for example, a link to the original work or a clear description of the materials allegedly infringed);</li><li>Identification of the allegedly infringing material and information reasonably sufficient to permit MarketingTool Pro to locate the material on our Website or service (please provide a direct link to the allegedly infringing material, as well as a description of it - a homepage link is not sufficient for us to identify the allegedly infringing material);</li><li>Information reasonably sufficient to permit MarketingTool Pro to contact you (your name, address, phone number and email address);</li><li>A statement that you have a good faith belief that use of the material in the manner complained is not authorized by the copyright owner, its agent or the law; and</li><li>A statement, made under penalty of perjury, that the information in the notice is accurate, and that you are authorized to act on behalf of the copyright owner.</li></ol><p>Our response to a valid notice of alleged infringement may include removing or restricting access to the allegedly infringing material.  If we remove or restrict access to user content in response to a valid notice, we will make a good faith effort to contact the affected account holder or user with information concerning the removal or restriction of access, including a copy of the takedown notice, along with instructions for filing a counter-notice.</p><p>Please do not send any other notices or communications to the Designated Agent, who is appointed only for the purpose of receiving notices of claims alleging copyright infringement under the DMCA.</p><h2><strong>Submitting a Counter-Notice</strong></h2><p>If you receive a copyright notice, it means that the content described in the notice has been removed from the Services, or access to the content has been restricted.  Please take the time to read through the notice sent to you, which includes information on the notice that MarketingTool Pro received as well as instructions on how to file a counter-notice.</p><p>If you believe that the material reported in the copyright notice that you received was misidentified or removed in error, you may submit a counter-notice.</p><p>Specific requirements for proper, valid counter-notice are set forth in the DMCA.  <em>See</em> 17 U.S.C. § 512(g)(3).  A valid counter-notice must include all of the following information:</p><ol start="" role="list"><li>A physical or electronic signature (for example, typing your full name);</li><li>Identification of the material that has been removed or to which access has been disabled and the location where the material appeared before it was removed or access to it was disabled (the description from the copyright notice will suffice);</li><li>A statement under penalty of perjury that you have a good faith belief that the material was removed or disabled as a result of mistake or misidentification of the material to be removed or disabled; and</li><li>Your name, address, and telephone number, and a statement that you consent to the jurisdiction of federal district court for the judicial district in which the address is located, or if your address is outside of the United States, for any judicial district in which MarketingTool Pro may be found, and that you will accept service of process from the person who provided to MarketingTool Pro the copyright notice or an agent of such person.</li></ol><p>To submit a counter-notice, please respond to our original email notification of the removal or disabling of access, and include all of the required information in the body of your email reply.</p><p>Upon our receipt of a valid counter-notice, MarketingTool Pro will promptly forward a copy to the person who filed the original notice of alleged copyright infringement.  The original complaining party will then have 10 business days to notify MarketingTool Pro that it has filed a lawsuit relating to the allegedly infringing material.  If we do not receive such a notice within the 10-business day period, we may restore access to the material that was removed or disabled.</p><p>Please consider carefully before sending MarketingTool Pro a copyright claim, especially if you are not sure whether you are the actual rights holder or authorized to act on the rights holder&#x27;s behalf.  Please also consider whether the allegedly infringing material might be authorized by law, such as under the fair use doctrine.  17 U.S.C. § 107.  There are substantial penalties for false claims made under the DMCA.  <em>See</em> 17 U.S.C. § 512(f), which provides that you may be liable for any damages, including costs and attorneys&#x27; fees incurred by MarketingTool Pro or our users, if you knowingly materially misrepresent that material or activity is infringing.  If you are unsure whether the material that you are reporting is actually infringing, you may wish to consult with legal counsel before submitting a notice.</p><h2><strong>Repeat Infringer Policy</strong></h2><p>As noted above, pursuant to the DMCA, it is MarketingTool Pro’s policy to terminate the account of repeat copyright infringers in appropriate circumstances.</p><h2><strong>Do you have any questions about this policy?</strong>‍</h2><p>Please contact us at:  </p><p>MarketingTool Pro Ltd.<br/>Medinat ha-Yehudim St. 91<br/>Herzliya, 4676673,  Israel <br/>Email: <a href="mailto:billing@marketingtool.pro">billing@marketingtool.pro</a>  (please begin email subject line with “DMCA”)<br/>Web:  <a href="https://www.marketingtool.pro/" target="_blank">www.marketingtool.pro</a> </p></div></div></div></div></section></main></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=614069317241cba124a0dd3b" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/js/webflow.2e00399e.417e60c5708971e8.js" type="text/javascript"></script><!-- Google Tag Manager (noscript)  -->
+<noscript>
+  <iframe src="https://marketingtool.pro/“https://www.googletagmanager.com/ns.html?id=GTM-M53Z3L4”"
+          height=“0” width=“0” style=“display:none;visibility:hidden”>
+  </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Intercom (Loads chat widget on page scroll) -->
+<script async>
+  var intercomLoader = function(){
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.defer=true;s.src='https://widget.intercom.io/widget/ywppln4d';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    window.intercomSettings = {
+      api_base: "https://api-iam.intercom.io",
+      app_id: "ywppln4d",
+      custom_launcher_selector:'.intercom-trigger',
+    };
+
+    window.removeEventListener('scroll', intercomLoader)
+  }
+  window.addEventListener('scroll', intercomLoader)
+</script>
+<script>
+// Helper function to get cookie
+function getCookie(name) {
+  let value = `; ${document.cookie}`;
+  let parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(';').shift();
+  return null;
+}
+// Helper function to set cookie
+function setCookie(name, value, days) {
+  let expires = "";
+  if (days) {
+    let date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+// Helper function to get URL parameter
+function getUrlParam(param) {
+  let urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+// Store first visit information (runs on every page load)
+if (!getCookie('first_page')) {
+  setCookie('first_page', window.location.href, 30); // 30 day cookie
+  // Store UTM parameters if they exist
+  let utmSource = getUrlParam('utm_source');
+  let utmMedium = getUrlParam('utm_medium');
+  let utmCampaign = getUrlParam('utm_campaign');
+  if (utmSource) setCookie('first_utm_source', utmSource, 30);
+  if (utmMedium) setCookie('first_utm_medium', utmMedium, 30);
+  if (utmCampaign) setCookie('first_utm_campaign', utmCampaign, 30);
+}
+// Send first-touch data to GA4 on conversion
+// This function should be called when a conversion happens
+function trackConversionWithAttribution(eventName) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', eventName, {
+      first_page: getCookie('first_page'),
+      first_utm_source: getCookie('first_utm_source') || 'direct',
+      first_utm_medium: getCookie('first_utm_medium') || 'none',
+      first_utm_campaign: getCookie('first_utm_campaign') || 'none'
+    });
+  }
+}
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var signupBtns = document.querySelectorAll('a[href="https://app.marketingtool.pro/auth/signup/"]');
+  
+  signupBtns.forEach(function(signupBtn) {
+    signupBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      
+      window.datafast("signup_click", {
+        page: window.location.href
+      });
+      
+      window.open(signupBtn.href, '_blank');
+    }, { once: true });
+  });
+});
+</script></body></html>
+<footer style="background: #0a0a0a; padding: 40px 0; text-align: center; border-top: 1px solid #333; margin-top: 80px;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <p style="color: #888; font-size: 14px;">© 2024 MarketingTool Pro. All rights reserved.</p>
+  </div>
+</footer>
+</div>
+
+<?php get_footer(); ?>

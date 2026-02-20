@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sign Up - MarketingTool Pro</title>
+    <meta name="description" content="Start your free trial with MarketingTool Pro and transform your marketing with AI-powered automation.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #00d4ff;
+            --secondary-color: #0099cc;
+            --accent-color: #ff6b35;
+            --dark-bg: #000000;
+            --dark-card: #0a0a0a;
+            --dark-section: #050505;
+            --dark-border: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b0;
+            --text-muted: #808080;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        .signup-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .signup-card {
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .signup-left {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-section) 100%);
+            padding: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .signup-left::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 20%, var(--primary-color) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, var(--secondary-color) 0%, transparent 50%);
+            opacity: 0.1;
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.1; }
+            50% { transform: scale(1.1); opacity: 0.2; }
+        }
+
+        .signup-right {
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-icon::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+            transform: translateX(-100%);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            100% { transform: translateX(100%); }
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .form-control-dark {
+            background: var(--dark-bg);
+            border: 1px solid var(--dark-border);
+            color: var(--text-primary);
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control-dark:focus {
+            background: rgba(0, 212, 255, 0.1);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.2);
+            color: var(--text-primary);
+        }
+
+        .btn-gradient {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .btn-gradient::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-gradient:hover::before {
+            left: 100%;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.4);
+            color: white;
+        }
+
+        .social-login {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-btn {
+            flex: 1;
+            padding: 12px;
+            background: var(--dark-bg);
+            border: 1px solid var(--dark-border);
+            border-radius: 10px;
+            color: var(--text-primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-btn:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+            color: var(--text-primary);
+        }
+
+        .pricing-highlight {
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid var(--primary-color);
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 2rem 0;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .feature-list li i {
+            color: var(--primary-color);
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: var(--dark-border);
+        }
+
+        .divider span {
+            background: var(--dark-card);
+            padding: 0 1rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 768px) {
+            .signup-left {
+                padding: 2rem;
+            }
+            
+            .signup-right {
+                padding: 2rem;
+            }
+            
+            .logo-text {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-card">
+            <div class="row g-0">
+                <div class="col-lg-6">
+                    <div class="signup-left position-relative">
+                        <a href="/" class="logo">
+                            <div class="logo-icon">
+                                <i class="fas fa-chart-line text-white fs-4"></i>
+                            </div>
+                            <span class="logo-text">MarketingTool Pro</span>
+                        </a>
+                        
+                        <h2 class="mb-4">Start Your Free Trial</h2>
+                        <p class="text-secondary mb-4">
+                            Join 10,000+ marketers using AI to automate and optimize their campaigns. No credit card required.
+                        </p>
+                        
+                        <div class="pricing-highlight">
+                            <h5 class="text-primary mb-2">🎉 Limited Time Offer</h5>
+                            <p class="mb-0">Get <strong>14 days free</strong> + <strong>$100 ad credit</strong> when you sign up today!</p>
+                        </div>
+                        
+                        <ul class="feature-list">
+                            <li>
+                                <i class="fas fa-robot"></i>
+                                <span>AI-powered campaign automation</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chart-line"></i>
+                                <span>Advanced analytics & reporting</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-users"></i>
+                                <span>Smart audience targeting</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-palette"></i>
+                                <span>Creative optimization tools</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-headset"></i>
+                                <span>24/7 priority support</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-5">
+                            <p class="text-muted small mb-2">Already have an account?</p>
+                            <a href="/login" class="text-primary text-decoration-none">
+                                Login here →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="signup-right">
+                        <h3 class="mb-4">Create Your Account</h3>
+                        
+                        <form id="signupForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control form-control-dark" placeholder="John" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-control form-control-dark" placeholder="Doe" required>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Work Email</label>
+                                <input type="email" class="form-control form-control-dark" placeholder="john@company.com" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Company Name</label>
+                                <input type="text" class="form-control form-control-dark" placeholder="Acme Inc.">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control form-control-dark" placeholder="Create a strong password" required>
+                                <small class="text-muted">Must be at least 8 characters</small>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">What's your monthly ad spend?</label>
+                                <select class="form-control form-control-dark">
+                                    <option>Less than $1,000</option>
+                                    <option>$1,000 - $5,000</option>
+                                    <option>$5,000 - $10,000</option>
+                                    <option>$10,000 - $50,000</option>
+                                    <option>More than $50,000</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                                <label class="form-check-label text-secondary" for="agreeTerms">
+                                    I agree to the <a href="#" class="text-primary">Terms of Service</a> and <a href="#" class="text-primary">Privacy Policy</a>
+                                </label>
+                            </div>
+                            
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="newsletter">
+                                <label class="form-check-label text-secondary" for="newsletter">
+                                    Send me marketing tips and product updates
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn-gradient">
+                                Start Free Trial
+                            </button>
+                        </form>
+                        
+                        <div class="divider">
+                            <span>OR</span>
+                        </div>
+                        
+                        <div class="social-login">
+                            <a href="#" class="social-btn">
+                                <i class="fab fa-google"></i>
+                                <span>Google</span>
+                            </a>
+                            <a href="#" class="social-btn">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <p class="text-muted small">
+                                <i class="fas fa-lock me-1"></i>
+                                Your data is safe and secure. We never share your information.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Handle form submission
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const formData = {
+                firstName: document.querySelector('input[placeholder="John"]').value,
+                lastName: document.querySelector('input[placeholder="Doe"]').value,
+                email: document.querySelector('input[type="email"]').value,
+                company: document.querySelector('input[placeholder="Acme Inc."]').value,
+                password: document.querySelector('input[type="password"]').value,
+                adSpend: document.querySelector('select').value
+            };
+            
+            // Here you would normally send to server
+            // For demo, redirect to app
+            window.location.href = 'https://app.marketingtool.pro/dashboard';
+        });
+    </script>
+</body>
+</html>

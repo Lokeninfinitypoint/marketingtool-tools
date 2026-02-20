@@ -1,0 +1,612 @@
+<?php
+/**
+ * Template Name: Facebook-Ad-Cost-Calculator
+ */
+get_header();
+?>
+
+<div class="page-content">
+<!DOCTYPE html><!-- Last Published: Wed Dec 17 2025 16:15:56 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="marketingtool.pro" data-wf-page="625e8e22af1d06a62b80bc0a" data-wf-site="614069317241cba124a0dd3b" lang="en"><head><meta charset="utf-8"/><title>Facebook Ad Cost Calculator</title><meta content="What is your breakeven ROAS? How much should you spend on ads to reach your goals? Our free Facebook ad cost calculator will help you figure it all out." name="description"/><meta content="Facebook Ad Cost Calculator" property="og:title"/><meta content="What is your breakeven ROAS? How much should you spend on ads to reach your goals? Our free Facebook ad cost calculator will help you figure it all out." property="og:description"/><meta content="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/67bdbdfd640879ae8678c5a9_ad%20cost%20caclucator.jpg" property="og:image"/><meta content="Facebook Ad Cost Calculator" property="twitter:title"/><meta content="What is your breakeven ROAS? How much should you spend on ads to reach your goals? Our free Facebook ad cost calculator will help you figure it all out." property="twitter:description"/><meta content="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/67bdbdfd640879ae8678c5a9_ad%20cost%20caclucator.jpg" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/css/MarketingTool Pro-dev.webflow.shared.7e13e4a7c.min.css" rel="stylesheet" type="text/css"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/66a94c934a72a60e59cbfedc_Favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/66a94c9835325d4d67d67d8a_Webclip.png" rel="apple-touch-icon"/><link href="facebook-ad-cost-calculator/index.html" rel="canonical"/><meta name="robots" content="max-image-preview:large">
+
+<!-- Custom Styles -->
+<style>
+  ::selection {color: #fff; background: #515fbc;}
+  input {caret-color: #515FBC;}
+  .cookie {-webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);}
+</style>
+
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://global-uploads.webflow.com">
+<link rel="preconnect" href="https://uploads-ssl.webflow.com">
+
+
+<!-- Google Tag Manager -->
+<script async>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                                                            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                                  })(window,document,'script','dataLayer','GTM-M53Z3L4');
+</script>
+
+<!-- Finsweet Cookie Consent -->
+<script async src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js" fs-cc-mode="informational"></script>
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Corporation",
+  "name": "MarketingTool Pro",
+  "url": "https://marketingtool.pro/",
+  "logo": "https://cdn.prod.website-files.com/614069317241cba124a0dd3b/614069317241cb1c7ea0dd5f_logo-MarketingTool Pro.svg",
+  "sameAs": [
+    "https://www.linkedin.com/company/MarketingTool Pronow/",
+    "https://www.instagram.com/MarketingTool Pro/",
+    "https://www.youtube.com/channel/UC_WfUNzWxQV3kQMT0hxsYTw",
+    "https://www.facebook.com/MarketingTool Prodotcom",
+    "https://twitter.com/MarketingTool Pro"
+  ]
+}
+</script>
+
+<!-- Website schema -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "MarketingTool Pro",
+      "url": "https://marketingtool.pro/",
+      "potentialAction": [{
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://marketingtool.pro/search?query={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }]
+    }
+</script>
+<script
+  defer
+  data-website-id="dfid_NC67qy9RNCW38lzpTDJUr"
+  data-domain="marketingtool.pro"
+  src="https://datafa.st/js/script.js">
+</script>
+<script id="datafast-queue">
+  window.datafast = window.datafast || function() {
+    window.datafast.q = window.datafast.q || [];
+    window.datafast.q.push(arguments);
+  };
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Home",
+    "item": "https://marketingtool.pro/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "Facebook Ad Cost Calculator",
+    "item": "https://marketingtool.pro/facebook-ad-cost-calculator"  
+  }]
+}
+</script></head><body><div class="page-wrapper"><div class="w-embed"><style>
+
+	/* Input & selection style */
+	::selection {color: #fff; background: #515fbc;}
+	input {caret-color: #515FBC;}
+
+  /* Snippet gets rid of top margin on first element in any rich text*/
+  .w-richtext>:first-child {
+    margin-top: 0;
+  }
+
+  /* Snippet gets rid of bottom margin on last element in any rich text*/
+  .w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Snippet prevents all click and hover interaction with an element */
+  .clickable-off {
+    pointer-events: none;
+  }
+
+  /* Snippet enables all click and hover interaction with an element */
+  .clickable-on{
+    pointer-events: auto;
+  }
+
+  /* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+  .div-square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  /*Apply "..." after 3 lines of text */
+  .text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  /*Apply "..." after 2 lines of text */
+  .text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+</style></div><div class="nav2_component"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav2_padding w-nav"><div class="nav2_container w-container"><div class="nav2_brand"><a href="index.html" class="nav2_brand-link w-nav-brand"><img src="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/673514528c96cad5a7a1e69a_MarketingTool Pro-web-logo.png" loading="lazy" alt="Logo" height="Auto" class="nav2_image"/></a></div><nav role="navigation" class="nav2_menuu w-nav-menu"><div class="nav2_linkss"><a href="index.html" class="nav2_link w-nav-link">Home</a><a href="services.html" class="nav2_link w-nav-link">Services</a><div data-hover="false" data-delay="0" class="nav2_dropdown w-dropdown"><div class="nav2_dropdown_toggle w-dropdown-toggle"><div>Resources</div><svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 10 6" fill="none" class="nav2_chevron"><path d="M1.66602 1.33325L4.70472 4.37196C4.86744 4.53468 5.13126 4.53468 5.29398 4.37196L8.33268 1.33325" stroke="currentColor" stroke-opacity="0.48" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><nav class="nav2_dropdown_list w-dropdown-list"><div class="nav2_workflow"><a href="resources/ppc-research.html" class="nav2_workflow_link w-inline-block"><div class="nav2_workflow_title">PPC Research & Insights</div><div class="nav2_workflow_par">Read original PPC research and insights</div></a><a href="resources/account-audit.html" class="nav2_workflow_link w-inline-block"><div class="nav2_workflow_title">Account Audit Report</div><div class="nav2_workflow_par">Get your free PPC audit</div></a><a href="resources/free-reporting.html" class="nav2_workflow_link w-inline-block"><div class="nav2_workflow_title">Free Reporting</div><div class="nav2_workflow_par">Test-drive our free reporting</div></a><a href="resources/free-tools.html" class="nav2_workflow_link w-inline-block"><div class="nav2_workflow_title">Free Tools</div><div class="nav2_workflow_par">Discover our free tools</div></a></div></nav></div><a href="blog.html" class="nav2_link w-nav-link">Blog</a><div data-hover="false" data-delay="0" class="nav2_dropdown w-dropdown"><div class="nav2_dropdown_toggle w-dropdown-toggle"><div>Company</div><svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 10 6" fill="none" class="nav2_chevron"><path d="M1.66602 1.33325L4.70472 4.37196C4.86744 4.53468 5.13126 4.53468 5.29398 4.37196L8.33268 1.33325" stroke="currentColor" stroke-opacity="0.48" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><nav class="nav2_dropdown_list w-dropdown-list"><div class="nav2_resources"><div class="nav_company-links"><a href="help-center.html" class="nav_sublink button w-button" style="margin-bottom:10px;">Help Center</a><a href="changelog.html" class="nav_sublink">Changelog</a><a href="affiliate-program.html" class="nav_sublink">Affiliate Program</a><a href="contact.html" class="nav_sublink">Contact Us</a><a href="pricing.html" class="nav_sublink">Pricing</a><a href="about-us.html" class="nav_sublink">About Us</a></div></div></nav></div><div class="nav2_mobile-buttons"><a href="free-trial.html" class="button is-100 w-button">Free Trial</a><a href="sign-in.html" class="nav2_link w-nav-link">Sign In</a></div></div></nav><div class="nav2_main-links"><a href="sign-in.html" class="nav2_link w-nav-link">Sign In</a><a href="free-trial.html" class="button w-button">Free Trial</a></div><div class="nav2_burger w-nav-button"><div class="button is-burger"><div class="nav2_lines"><div class="nav2_line"></div><div class="nav2_line"></div><div class="nav2_line"></div></div><div>Menu</div></div></div></div></div></div><main class="main-wrapper"><section class="section_hero"><div class="padding-global"><div class="container-large"><div class="padding-section-large is-hero"><div class="z-index-1"><div class="text-block_component"><div class="text-block_text"><h2 class="text-align-center">Facebook Ad Cost Calculator</h2><p class="text-block_paragraph">How much do you need to spend on your ads to reach your goals? What is your breakeven ROAS? Are you allocating your budget wisely between Acquisition, Retargeting, and Retention campaigns?</p></div></div><div class="spacer-xlarge"></div><div data-current="Revenue" data-easing="ease" data-duration-in="300" data-duration-out="100" class="screen-tabs_component w-tabs"><div class="screen-tabs_menu is-calc w-tab-menu"><a data-w-tab="Revenue" class="screen-tabs_link is-first w-inline-block w-tab-link w--current"><div>By Revenue</div></a><a data-w-tab="Profit" class="screen-tabs_link is-last w-inline-block w-tab-link"><div>By Profit</div></a></div><div class="screen-tabs_content w-tab-content"><div data-w-tab="Revenue" class="screen-tabs_pane w-tab-pane w--tab-active"><div class="ad-calc_wrap"><div class="ad-calc_inputs"><div class="additional-heading">This is what the calculator needs from you:</div><div class="ad-calc_item is-first w-embed"><div>
+  <label for="monthly-revenue-goal" class="form-label">Monthly Revenue Goal</label>
+  <div class="ad-calc__input-wrap">
+    <div class="ad-calc__unit">$</div>
+    <input type="number" id="monthly-revenue-goal" class="form-input ad-calc__input" min="0" step="1000">    
+  </div>
+</div></div><div class="ad-calc_item w-embed"><div>
+  <label for="aov" class="form-label">Average Product/Service Price (AOV)</label>
+  <div class="ad-calc__input-wrap">
+    <div class="ad-calc__unit">$</div>
+    <input type="number" id="aov" class="form-input ad-calc__input" min="0" step="10">    
+  </div>
+</div></div><div class="ad-calc_item w-embed"><div>
+  <label for="cpm" class="form-label">Cost per 1,000 Impressions (CPM)</label>
+  <div class="ad-calc__input-wrap">
+    <div class="ad-calc__unit">$</div>
+    <input type="number" id="cpm" class="form-input ad-calc__input" min="0">    
+  </div>
+</div></div><div class="ad-calc_item w-embed"><div>
+  <label for="ctr" class="form-label">Click-Through Rate (CTR)</label>
+  <div class="ad-calc__input-wrap">
+    <div class="ad-calc__unit">%</div>
+    <input type="number" id="ctr" class="form-input ad-calc__input" min="0" step="0.1">    
+  </div>
+</div></div><div class="ad-calc_item w-embed"><div>
+    <label for="cpc" class="form-label">Cost per Click (CPC)</label>
+    <strong><div type="number" id="cpc"> $ -</div>  </strong>  
+</div></div><div class="ad-calc_item w-embed"><div>
+  <label for="cpa" class="form-label">Cost per Acquisition (CPA)</label>
+  <div class="ad-calc__input-wrap">
+    <div class="ad-calc__unit">$</div>
+    <input type="number" id="cpa" class="form-input ad-calc__input" min="0">    
+  </div>
+</div></div><div class="ad-calc_item w-embed"><div>
+    <label for="conversion-rate" class="form-label">Conversion Rate</label>
+    <strong><div type="number" id="conversion-rate">- %</div>  </strong>  
+</div></div></div><div class="ad-calc_results"><div class="ad-calc_buttons"><a id="daily-switch" href="facebook-ad-cost-calculator/index.html#" class="ad-calc_switch is-off w-button">Daily</a><a id="monthly-switch" href="facebook-ad-cost-calculator/index.html#" class="ad-calc_switch w-button">Monthly</a></div><div class="additional-heading is-white">This is what you need to achieve your revenue goal:</div><div class="ad-calc_item is-first w-embed"><div>
+    <label for="sales-revenue" class="form-label" style="color: #f3f4f7;">Sales:</label>
+    <strong><div type="number" id="sales-revenue" style="font-size: 3rem;">-</div></strong>
+</div></div><div class="ad-calc_item w-embed"><div>
+    <label for="clicks-revenue" class="form-label" style="color: #f3f4f7;">Clicks:</label>
+    <strong><div type="number" id="clicks-revenue" style="font-size: 3rem;">-</div></strong>
+</div></div><div class="ad-calc_item w-embed"><div>
+    <label for="budget-revenue" class="form-label" style="color: #f3f4f7;">Total Budget:</label>
+    <strong><div type="number" id="budget-revenue" style="font-size: 3rem;">-</div></strong>  
+</div></div><div class="w-layout-grid ad-calc_grid"><div id="w-node-_5cec3a9b-f0b0-10bf-75d6-202ec73698d9-2b80bc0a" class="w-embed"><div>
+    <label for="acquisition-budget" class="form-label" style="color: #f3f4f7;">Acquisition Budget:</label>
+    <strong><div type="number" id="acquisition-budget">-</div></strong>  
+</div></div><div id="w-node-_5cec3a9b-f0b0-10bf-75d6-202ec73698da-2b80bc0a" class="w-embed"><div>
+    <label for="retargeting-budget" class="form-label" style="color: #f3f4f7;">Retargeting Budget:</label>
+    <strong><div type="number" id="retargeting-budget">-</div></strong>  
+</div></div><div id="w-node-_5cec3a9b-f0b0-10bf-75d6-202ec73698db-2b80bc0a" class="w-embed"><div>
+    <label for="retention-budget" class="form-label" style="color: #f3f4f7;">Retention Budget:</label>
+    <strong><div type="number" id="retention-budget">-</div></strong>  
+</div></div></div></div></div></div><div data-w-tab="Profit" class="screen-tabs_pane w-tab-pane"><div class="ad-calc_wrap"><div class="ad-calc_inputs"><div class="additional-heading">This is what the calculator needs from you:</div><div class="ad-calc_item is-first w-embed"><div>
+  <label for="monthly-profit-goal" class="form-label">Monthly Profit Goal</label>
+	<div class="ad-calc__input-wrap">
+	<div class="ad-calc__unit">$</div>
+	<input type="number" id="monthly-profit-goal" class="form-input ad-calc__input" min="0" step="1000">    
+	</div>
+</div></div><div class="ad-calc_item w-embed"><div>
+  <label for="aov-profit" class="form-label">Average Product/Service Price (AOV)</label>
+  <div class="ad-calc__input-wrap">
+    <div class="ad-calc__unit">$</div>
+    <input type="number" id="aov-profit" class="form-input ad-calc__input" min="0" step="10">    
+  </div>
+</div></div><div class="ad-calc_item w-embed"><div>
+  <label for="production-cost" class="form-label">Average Production Cost</label>
+  <div class="ad-calc__input-wrap">
+    <div class="ad-calc__unit">$</div>
+    <input type="number" id="production-cost" class="form-input ad-calc__input" min="0" step="10">    
+  </div>  
+</div></div><div class="ad-calc_item w-embed"><div>
+  <label for="shippin-cost" class="form-label">Average Shipping Cost</label>
+  <div class="ad-calc__input-wrap">
+    <div class="ad-calc__unit">$</div>
+    <input type="number" id="shipping-cost" class="form-input ad-calc__input" min="0" step="10">
+  </div>
+</div></div><div class="ad-calc_item w-embed"><div>
+    <label for="profit-per-purchase" class="form-label">Average Profit per Purchase (Excluding Ad Spend)</label>
+    <strong><div type="number" id="profit-per-purchase"> $ -</div>  </strong>  
+</div></div><div class="ad-calc_item w-embed"><div>
+    <label for="roas" class="form-label">Breakeven ROAS</label>
+    <strong><div type="number" id="roas">-</div>  </strong>  
+</div></div><div class="ad-calc_item w-embed"><div>
+    <label for="cpm-profit" class="form-label">Cost per 1,000 Impressions (CPM)</label>
+      <div class="ad-calc__input-wrap">
+    <div class="ad-calc__unit">$</div>
+    <input type="number" id="cpm-profit" class="form-input ad-calc__input" min="0">    
+</div>
+</div></div><div class="ad-calc_item w-embed"><div>
+    <label for="ctr-profit" class="form-label">Click-Through Rate (CTR)</label>
+      <div class="ad-calc__input-wrap">
+    <div class="ad-calc__unit">%</div>
+    <input type="number" id="ctr-profit" class="form-input ad-calc__input" min="0" step="0.1">    
+</div>
+</div></div><div class="ad-calc_item w-embed"><div>
+    <label for="cpc-profit" class="form-label">Cost per Click (CPC)</label>
+    <strong><div type="number" id="cpc-profit"> $ -</div>  </strong>  
+</div></div><div class="ad-calc_item w-embed"><div>
+    <label for="cpa-profit" class="form-label">Cost per Acquisition (CPA)</label>
+      <div class="ad-calc__input-wrap">
+    <div class="ad-calc__unit">$</div>
+    <input type="number" id="cpa-profit" class="form-input ad-calc__input" min="0">    
+</div>
+</div></div><div class="ad-calc_item w-embed"><div>
+    <label for="conversion-rate-profit" class="form-label">Conversion Rate</label>
+    <strong><div type="number" id="conversion-rate-profit">- %</div>  </strong>  
+</div></div></div><div class="ad-calc_results"><div class="ad-calc_buttons"><a id="daily-switch-profit" href="facebook-ad-cost-calculator/index.html#" class="ad-calc_switch is-off w-button">Daily</a><a id="monthly-switch-profit" href="facebook-ad-cost-calculator/index.html#" class="ad-calc_switch w-button">Monthly</a></div><div class="additional-heading is-white">This is what you need to achieve your revenue goal:</div><div class="ad-calc_item is-first w-embed"><div>
+    <label for="sales-revenue-profit" class="form-label" style="color: #f3f4f7;">Sales:</label>
+    <strong><div type="number" id="sales-revenue-profit" style="font-size: 3rem;">-</div></strong>
+</div></div><div class="ad-calc_item w-embed"><div>
+    <label for="clicks-revenue-profit" class="form-label" style="color: #f3f4f7;">Clicks:</label>
+    <strong><div type="number" id="clicks-revenue-profit" style="font-size: 3rem;">-</div></strong>
+</div></div><div class="ad-calc_item w-embed"><div>
+    <label for="budget-revenue-profit" class="form-label" style="color: #f3f4f7;">Total Budget:</label>
+    <strong><div type="number" id="budget-revenue-profit" style="font-size: 3rem;">-</div></strong>  
+</div></div><div class="w-layout-grid ad-calc_grid"><div id="w-node-_8a7fec63-afff-5ace-2a5d-a502091245c9-2b80bc0a" class="w-embed"><div>
+    <label for="acquisition-budget-profit" class="form-label" style="color: #f3f4f7;">Acquisition budget:</label>
+    <strong><div type="number" id="acquisition-budget-profit">-</div></strong>  
+</div></div><div id="w-node-_8a7fec63-afff-5ace-2a5d-a502091245ca-2b80bc0a" class="w-embed"><div>
+    <label for="retargeting-budget-profit" class="form-label" style="color: #f3f4f7;">Retargeting budget:</label>
+    <strong><div type="number" id="retargeting-budget-profit">-</div></strong>  
+</div></div><div id="w-node-_8a7fec63-afff-5ace-2a5d-a502091245cb-2b80bc0a" class="w-embed"><div>
+    <label for="retention-budget-profit" class="form-label" style="color: #f3f4f7;">Retention budget:</label>
+    <strong><div type="number" id="retention-budget-profit">-</div></strong>  
+</div></div></div></div></div></div></div></div></div></div><div class="hide w-embed w-script"><!-- Ad Calculator by Revenue -->
+<script>
+// load calculator components
+const monthlyRevenueGoal = document.querySelector("#monthly-revenue-goal");
+const aov = document.querySelector("#aov");
+const cpm = document.querySelector("#cpm");
+const ctr = document.querySelector("#ctr");
+const cpc = document.querySelector("#cpc"); //output
+const cpa = document.querySelector("#cpa");
+const conversionRate = document.querySelector("#conversion-rate"); //output
+const salesGoalRevenue = document.querySelector("#sales-revenue"); //output
+const clicksGoalRevenue = document.querySelector("#clicks-revenue"); //output
+const budgetGoalRevenue = document.querySelector("#budget-revenue"); //output
+const acquisitionBudget = document.querySelector("#acquisition-budget"); //new output
+const retargetingBudget = document.querySelector("#retargeting-budget"); //new output
+const retentionBudget = document.querySelector("#retention-budget"); //new output
+const monthlySwitch = document.querySelector("#monthly-switch");
+const dailySwitch = document.querySelector("#daily-switch");
+const inputs = [monthlyRevenueGoal, aov, cpm, ctr, cpa];
+let monthlyDivider = 1;
+
+// initial values
+dailySwitch.classList.add('is-off');
+
+calcValues();
+
+//add eventlisteners
+monthlySwitch.addEventListener('click', function () {
+  monthlySwitch.classList.remove('is-off');
+  dailySwitch.classList.add('is-off');
+  monthlyDivider = 1;
+  console.log(monthlyDivider);
+  calcValues();
+});
+
+dailySwitch.addEventListener('click', function () {
+  monthlySwitch.classList.add('is-off');
+  dailySwitch.classList.remove('is-off');
+  monthlyDivider = 30;
+  console.log(monthlyDivider);
+  calcValues();
+});
+
+
+for (let i = 0; i < inputs.length; i++) {
+  inputs[i].addEventListener('change', function() {
+    calcValues();
+});
+}
+
+// calculation function
+function calcValues() {
+
+  let cpcValue = ((cpm.value / 1000) / (ctr.value / 100)); //good
+  let conversionRateValue = ((cpcValue * 100) / cpa.value); //good
+  let salesGoalRevenueValue = monthlyRevenueGoal.value / aov.value;
+  let clicksGoalRevenueValue = salesGoalRevenueValue / conversionRateValue * 100;
+  let budgetGoalRevenueValue = cpa.value*salesGoalRevenueValue;
+  let acquisitionBudgetValue = budgetGoalRevenueValue * 0.7;
+  let retargetingBudgetValue = budgetGoalRevenueValue * 0.25;
+  let retentionBudgetValue = budgetGoalRevenueValue * 0.05;
+
+  if (monthlyRevenueGoal.value>0 && aov.value>0 && cpa.value>0 && cpm.value>0 && ctr.value>0) {
+    cpc.innerHTML = `$${Math.round(cpcValue * 100) / 100}`;
+    conversionRate.innerHTML = `${Math.round(conversionRateValue * 100) / 100}%`;
+    salesGoalRevenue.innerHTML = `${Math.round(salesGoalRevenueValue / monthlyDivider)}`;
+    clicksGoalRevenue.innerHTML = `${Math.round(clicksGoalRevenueValue / monthlyDivider)}`;
+    budgetGoalRevenue.innerHTML = `$${Math.round(budgetGoalRevenueValue / monthlyDivider)}`;
+    acquisitionBudget.innerHTML = `$${Math.round(acquisitionBudgetValue / monthlyDivider)}`;
+    retargetingBudget.innerHTML = `$${Math.round(retargetingBudgetValue / monthlyDivider)}`;
+    retentionBudget.innerHTML = `$${Math.round(retentionBudgetValue / monthlyDivider)}`;
+  } else if (cpa.value>0 && cpm.value>0 && ctr.value>0) {
+    cpc.innerHTML = `$${Math.round(cpcValue * 100) / 100}`;
+    conversionRate.innerHTML = `${Math.round(conversionRateValue * 100) / 100}%`;
+    salesGoalRevenue.innerHTML = "–";
+    clicksGoalRevenue.innerHTML = "–";
+    budgetGoalRevenue.innerHTML = "–";
+    acquisitionBudget.innerHTML = "–";
+    retargetingBudget.innerHTML = "–";
+    retentionBudget.innerHTML = "–";
+  } else if (cpm.value>0 && ctr.value>0) {
+    cpc.innerHTML = `$${Math.round(cpcValue * 100) / 100}`;
+    conversionRate.innerHTML = "–";
+    salesGoalRevenue.innerHTML = "–";
+    clicksGoalRevenue.innerHTML = "–";
+    budgetGoalRevenue.innerHTML = "–";
+    acquisitionBudget.innerHTML = "–";
+    retargetingBudget.innerHTML = "–";
+    retentionBudget.innerHTML = "–";
+  } else {
+    cpc.innerHTML = "-";
+    conversionRate.innerHTML = "–";
+    salesGoalRevenue.innerHTML = "–";
+    clicksGoalRevenue.innerHTML = "–";
+    budgetGoalRevenue.innerHTML = "–";
+    acquisitionBudget.innerHTML = "–";
+    retargetingBudget.innerHTML = "–";
+    retentionBudget.innerHTML = "–";
+  }
+}
+</script></div><div class="hide w-embed w-script"><!-- Ad Calculator by Profit -->
+<script>
+// load calculator components
+const monthlyProfitGoal = document.querySelector("#monthly-profit-goal");
+const aovProfit = document.querySelector("#aov-profit");
+const productionCost = document.querySelector("#production-cost");
+const shippingCost = document.querySelector("#shipping-cost");
+const profitPerPurchase = document.querySelector("#profit-per-purchase"); //new output
+const roas = document.querySelector("#roas"); //new output
+const cpmProfit = document.querySelector("#cpm-profit");
+const ctrProfit = document.querySelector("#ctr-profit");
+const cpcProfit = document.querySelector("#cpc-profit"); //output
+const cpaProfit = document.querySelector("#cpa-profit");
+const conversionRateProfit = document.querySelector("#conversion-rate-profit"); //output
+const salesGoalProfit = document.querySelector("#sales-revenue-profit"); //output
+const clicksGoalProfit = document.querySelector("#clicks-revenue-profit"); //output
+const budgetGoalProfit = document.querySelector("#budget-revenue-profit"); //output
+const acquisitionBudgetProfit = document.querySelector("#acquisition-budget-profit"); //output
+const retargetingBudgetProfit = document.querySelector("#retargeting-budget-profit"); //output
+const retentionBudgetProfit = document.querySelector("#retention-budget-profit"); //output
+const monthlySwitchProfit = document.querySelector("#monthly-switch-profit");
+const dailySwitchProfit = document.querySelector("#daily-switch-profit");
+const inputsProfit = [monthlyProfitGoal, aovProfit, productionCost, shippingCost, cpmProfit, ctrProfit, cpaProfit];
+let monthlyDividerProfit = 1;
+
+// initial values
+dailySwitchProfit.classList.add('is-off');
+calcValuesProfit();
+
+// eventlisteners
+monthlySwitchProfit.addEventListener('click', function () {
+  monthlySwitchProfit.classList.remove('is-off');
+  dailySwitchProfit.classList.add('is-off');
+  monthlyDividerProfit = 1;
+  calcValuesProfit();
+});
+
+dailySwitchProfit.addEventListener('click', function () {
+  monthlySwitchProfit.classList.add('is-off');
+  dailySwitchProfit.classList.remove('is-off');
+  monthlyDividerProfit = 30;
+  calcValuesProfit();
+});
+
+
+for (let i = 0; i < inputsProfit.length; i++) {
+  inputsProfit[i].addEventListener('change', function() {
+    calcValuesProfit();
+});
+}
+
+// calculation function
+function calcValuesProfit() {
+
+  let cpcProfitValue = ((cpmProfit.value / 1000) / (ctrProfit.value / 100));
+  let conversionRateProfitValue = ((cpcProfitValue * 100) / cpaProfit.value);
+  let profitPerPurchaseValue = Number(aovProfit.value) - (Number(productionCost.value) + Number(shippingCost.value));
+  let roasValue = aovProfit.value / profitPerPurchaseValue;
+  let salesGoalProfitValue = monthlyProfitGoal.value / profitPerPurchaseValue;
+  let clicksGoalProfitValue = salesGoalProfitValue / conversionRateProfitValue * 100; //good
+  let budgetGoalProfitValue = cpaProfit.value * salesGoalProfitValue;
+  let acquisitionBudgetProfitValue = budgetGoalProfitValue * 0.7;
+  let retargetingBudgetProfitValue = budgetGoalProfitValue * 0.25;
+  let retentionBudgetProfitValue = budgetGoalProfitValue * 0.05;
+
+  if (aovProfit.value > 0 && productionCost.value > 0 && shippingCost.value > 0 && monthlyProfitGoal.value > 0 && aovProfit.value > 0 && cpaProfit.value > 0 && cpmProfit.value > 0 && ctrProfit.value > 0) {
+    profitPerPurchase.innerHTML = `$${profitPerPurchaseValue}`;
+    roas.innerHTML = `${Math.round(roasValue * 100) / 100}`;
+    cpcProfit.innerHTML = `$${Math.round(cpcProfitValue * 100) / 100}`;
+    conversionRateProfit.innerHTML = `${Math.round(conversionRateProfitValue * 100) / 100}%`;
+    salesGoalProfit.innerHTML = `${Math.round(salesGoalProfitValue / monthlyDividerProfit)}`;
+    clicksGoalProfit.innerHTML = `${Math.round(clicksGoalProfitValue / monthlyDividerProfit)}`;
+    budgetGoalProfit.innerHTML = `$${Math.round(budgetGoalProfitValue / monthlyDividerProfit)}`;
+    acquisitionBudgetProfit.innerHTML = `$${Math.round(acquisitionBudgetProfitValue / monthlyDividerProfit)}`;
+    retargetingBudgetProfit.innerHTML = `$${Math.round(retargetingBudgetProfitValue / monthlyDividerProfit)}`;
+    retentionBudgetProfit.innerHTML = `$${Math.round(retentionBudgetProfitValue / monthlyDividerProfit)}`;
+  } else if (aovProfit.value > 0 && productionCost.value > 0 && shippingCost.value > 0 && cpaProfit.value > 0 && cpmProfit.value > 0 && ctrProfit.value > 0) {
+    profitPerPurchase.innerHTML = `$${profitPerPurchaseValue}`;
+    roas.innerHTML = `${Math.round(roasValue * 100) / 100}`;
+    cpcProfit.innerHTML = `$${Math.round(cpcProfitValue * 100) / 100}`;
+    conversionRateProfit.innerHTML = `${Math.round(conversionRateProfitValue * 100) / 100}%`;
+    salesGoalProfit.innerHTML = "–";
+    clicksGoalProfit.innerHTML = "–";
+    budgetGoalProfit.innerHTML = "–";
+    acquisitionBudgetProfit.innerHTML = "–";
+    retargetingBudgetProfit.innerHTML = "–";
+    retentionBudgetProfit.innerHTML = "–";
+  } else if (aovProfit.value > 0 && productionCost.value > 0 && shippingCost.value > 0 && cpmProfit.value > 0 && ctrProfit.value > 0) {
+    profitPerPurchase.innerHTML = `$${profitPerPurchaseValue}`;
+    roas.innerHTML = `${Math.round(roasValue * 100) / 100}`;
+    cpcProfit.innerHTML = `$${Math.round(cpcProfitValue * 100) / 100}`;
+    conversionRateProfit.innerHTML = "–";
+    salesGoalProfit.innerHTML = "–";
+    clicksGoalProfit.innerHTML = "–";
+    budgetGoalProfit.innerHTML = "–";
+    acquisitionBudgetProfit.innerHTML = "–";
+    retargetingBudgetProfit.innerHTML = "–";
+    retentionBudgetProfit.innerHTML = "–";
+  } else if (aovProfit.value > 0 && productionCost.value > 0 && shippingCost.value > 0) {
+    profitPerPurchase.innerHTML = `$${profitPerPurchaseValue}`;
+    roas.innerHTML = `${Math.round(roasValue * 100) / 100}`;
+    cpcProfit.innerHTML = "-";
+    conversionRateProfit.innerHTML = "–";
+    salesGoalProfit.innerHTML = "–";
+    clicksGoalProfit.innerHTML = "–";
+    budgetGoalProfit.innerHTML = "–";
+    acquisitionBudgetProfit.innerHTML = "–";
+    retargetingBudgetProfit.innerHTML = "–";
+    retentionBudgetProfit.innerHTML = "–";
+  } else {
+    profitPerPurchase.innerHTML = "$ -";
+    roas.innerHTML = "-";
+    cpcProfit.innerHTML = "-";
+    conversionRateProfit.innerHTML = "–";
+    salesGoalProfit.innerHTML = "–";
+    clicksGoalProfit.innerHTML = "–";
+    budgetGoalProfit.innerHTML = "–";
+    acquisitionBudgetProfit.innerHTML = "–";
+    retargetingBudgetProfit.innerHTML = "–";
+    retentionBudgetProfit.innerHTML = "–";
+  }
+}
+</script></div><div class="w-embed"><style>
+	.ad-calc__unit {width: 0rem; transform: translate(1.25rem,0.75rem);position: relative; opacity: 60%;}
+  .ad-calc__input-wrap {display: flex;}
+  .ad-calc__input {padding-left: 2.25rem;}
+</style></div></div></div><div class="separator_component"><img src="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734b2ee71ca549e23203fd0_separator.avif" loading="eager" sizes="(max-width: 479px) 100vw, 239.921875px" srcset="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734b2ee71ca549e23203fd0_separator-p-500.png 500w, https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734b2ee71ca549e23203fd0_separator-p-800.png 800w, https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734b2ee71ca549e23203fd0_separator-p-1080.png 1080w, https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734b2ee71ca549e23203fd0_separator-p-1600.png 1600w, https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734b2ee71ca549e23203fd0_separator.avif 1992w" alt="" class="separator_img is-desktop"/><img src="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6737a5fa13fcaed8b8645dd4_separator-mobile.avif" loading="eager" sizes="(max-width: 479px) 100vw, 240px" srcset="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6737a5fa13fcaed8b8645dd4_separator-mobile-p-500.png 500w, https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6737a5fa13fcaed8b8645dd4_separator-mobile.avif 720w" alt="" class="separator_img is-mobile"/></div><div class="bg-light_componentt"><div data-w-id="db756b29-d555-6d92-6203-49d13be7d56d" class="bg-light_img"></div></div><div class="bg-m_component"><div class="bg-m_wrap"><img src="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734a960b6efdb04370a3b1f_bg-m.png" loading="eager" data-w-id="fe276206-2f1e-4053-8c3f-7c3e9ebc2d5e" sizes="(max-width: 479px) 100vw, 239.984375px" alt="" srcset="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734a960b6efdb04370a3b1f_bg-m-p-500.png 500w, https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734a960b6efdb04370a3b1f_bg-m-p-800.png 800w, https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734a960b6efdb04370a3b1f_bg-m-p-1080.png 1080w, https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734a960b6efdb04370a3b1f_bg-m.png 1439w" class="bg-m_image"/><div class="bg-m_anim w-embed"><svg width="1439" height="360" viewBox="0 0 1439 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Animated Gradient -->
+    <linearGradient id="paint0_linear_6003_49898" x1="719" y1="-15.5" x2="719" y2="-70.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0"/>
+      <stop offset="0.185" stop-color="white" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+
+      <!-- Animate y1 from -15.5 to 448.5 -->
+      <animate attributeName="y1" from="-15.5" to="448.5" dur="2s" repeatCount="indefinite"/>
+
+      <!-- Animate y2 from -70.5 to 401.5 -->
+      <animate attributeName="y2" from="-70.5" to="401.5" dur="2s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M681.31 360H680.192L540.272 80.3393L541.167 79.8918L681.31 360ZM541.167 79.8918L540.272 80.3393C532.507 64.8135 516.751 55 499.4 55H156.618L309.216 360H308.097L155.5 55L155 54H156.118H499.4C517.133 54 533.233 64.0302 541.167 79.8918ZM758.476 360H757.357L897.501 79.8918C905.434 64.0302 921.534 54 939.267 54H1282.55H1283.67L1283.17 55L1130.57 360H1129.45L1282.05 55H939.267C921.916 55 906.16 64.8134 898.395 80.3393L758.476 360Z" 
+  fill="white" fill-opacity="0.00"/>
+
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M681.31 360H680.192L540.272 80.3393L541.167 79.8918L681.31 360ZM541.167 79.8918L540.272 80.3393C532.507 64.8135 516.751 55 499.4 55H156.618L309.216 360H308.097L155.5 55L155 54H156.118H499.4C517.133 54 533.233 64.0302 541.167 79.8918ZM758.476 360H757.357L897.501 79.8918C905.434 64.0302 921.534 54 939.267 54H1282.55H1283.67L1283.17 55L1130.57 360H1129.45L1282.05 55H939.267C921.916 55 906.16 64.8134 898.395 80.3393L758.476 360Z" 
+  fill="url(#paint0_linear_6003_49898)"/>
+</svg></div></div></div></section><section class="section_cta"><div class="padding-global"><div class="container-large"><div class="padding-section-new-cta"><div class="z-index-1"><div class="text-block_component"><div class="text-block_text"><div class="max-width-large"><h2 class="text-align-center">You scrolled so far. You want this. Trust us.</h2></div></div></div><div class="spacer-large"></div><div class="buttons_component"><div class="animated-button"><a href="https://app.marketingtool.pro/auth/signup/" target="_blank" class="button w-button">Try for Free ($0 Trial)</a></div><a href="https://marketingtool.pro/pricing" class="button is-secondary w-button">View Pricing</a></div></div><div class="bg-m-fipped-bot_component"><img sizes="(max-width: 479px) 100vw, 239.984375px" srcset="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734f7cea1423f8399f4f087_bg-m-flipped-p-500.avif 500w, https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734f7cea1423f8399f4f087_bg-m-flipped-p-800.avif 800w, https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734f7cea1423f8399f4f087_bg-m-flipped.avif 1440w" alt="" src="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/6734f7cea1423f8399f4f087_bg-m-flipped.avif" loading="lazy" class="bg-m-flipped-bot_image"/></div></div></div></div></section></main></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=614069317241cba124a0dd3b" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/614069317241cba124a0dd3b/js/webflow.2e00399e.417e60c5708971e8.js" type="text/javascript"></script><!-- Google Tag Manager (noscript)  -->
+<noscript>
+  <iframe src="https://marketingtool.pro/“https://www.googletagmanager.com/ns.html?id=GTM-M53Z3L4”"
+          height=“0” width=“0” style=“display:none;visibility:hidden”>
+  </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Intercom (Loads chat widget on page scroll) -->
+<script async>
+  var intercomLoader = function(){
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.defer=true;s.src='https://widget.intercom.io/widget/ywppln4d';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    window.intercomSettings = {
+      api_base: "https://api-iam.intercom.io",
+      app_id: "ywppln4d",
+      custom_launcher_selector:'.intercom-trigger',
+    };
+
+    window.removeEventListener('scroll', intercomLoader)
+  }
+  window.addEventListener('scroll', intercomLoader)
+</script>
+<script>
+// Helper function to get cookie
+function getCookie(name) {
+  let value = `; ${document.cookie}`;
+  let parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(';').shift();
+  return null;
+}
+// Helper function to set cookie
+function setCookie(name, value, days) {
+  let expires = "";
+  if (days) {
+    let date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+// Helper function to get URL parameter
+function getUrlParam(param) {
+  let urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+// Store first visit information (runs on every page load)
+if (!getCookie('first_page')) {
+  setCookie('first_page', window.location.href, 30); // 30 day cookie
+  // Store UTM parameters if they exist
+  let utmSource = getUrlParam('utm_source');
+  let utmMedium = getUrlParam('utm_medium');
+  let utmCampaign = getUrlParam('utm_campaign');
+  if (utmSource) setCookie('first_utm_source', utmSource, 30);
+  if (utmMedium) setCookie('first_utm_medium', utmMedium, 30);
+  if (utmCampaign) setCookie('first_utm_campaign', utmCampaign, 30);
+}
+// Send first-touch data to GA4 on conversion
+// This function should be called when a conversion happens
+function trackConversionWithAttribution(eventName) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', eventName, {
+      first_page: getCookie('first_page'),
+      first_utm_source: getCookie('first_utm_source') || 'direct',
+      first_utm_medium: getCookie('first_utm_medium') || 'none',
+      first_utm_campaign: getCookie('first_utm_campaign') || 'none'
+    });
+  }
+}
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var signupBtns = document.querySelectorAll('a[href="https://app.marketingtool.pro/auth/signup/"]');
+  
+  signupBtns.forEach(function(signupBtn) {
+    signupBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      
+      window.datafast("signup_click", {
+        page: window.location.href
+      });
+      
+      window.open(signupBtn.href, '_blank');
+    }, { once: true });
+  });
+});
+</script></body></html>
+<footer style="background: #0a0a0a; padding: 40px 0; text-align: center; border-top: 1px solid #333; margin-top: 80px;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <p style="color: #888; font-size: 14px;">© 2024 MarketingTool Pro. All rights reserved.</p>
+  </div>
+</footer>
+</div>
+
+<?php get_footer(); ?>

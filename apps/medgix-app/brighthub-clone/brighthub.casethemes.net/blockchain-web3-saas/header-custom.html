@@ -1,0 +1,287 @@
+<header id="pxl-header-custom" class="pxl-header-custom">
+  <style>
+    .pxl-header-custom {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background: rgba(0, 0, 0, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .pxl-header-custom .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+    .pxl-header-custom .logo a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .pxl-header-custom .logo img {
+      height: 28px;
+    }
+    .pxl-header-custom .logo-text {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-left: 10px;
+      background: linear-gradient(90deg, #01E5E5, #00a8a8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .pxl-header-custom nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .pxl-header-custom .nav-item {
+      position: relative;
+    }
+    .pxl-header-custom .nav-link {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 16px;
+      font-size: 15px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.3s;
+      border-radius: 8px;
+    }
+    .pxl-header-custom .nav-link:hover {
+      color: #01E5E5;
+      background: rgba(1, 229, 229, 0.1);
+    }
+    .pxl-header-custom .nav-link svg {
+      width: 12px;
+      height: 12px;
+      transition: transform 0.3s;
+    }
+    .pxl-header-custom .nav-item:hover .nav-link svg {
+      transform: rotate(180deg);
+    }
+    .pxl-header-custom .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 280px;
+      background: rgba(20, 20, 25, 0.98);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 12px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: all 0.3s;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+    .pxl-header-custom .nav-item:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .pxl-header-custom .dropdown-item {
+      display: block;
+      padding: 12px 16px;
+      color: #ccc;
+      text-decoration: none;
+      font-size: 14px;
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+    .pxl-header-custom .dropdown-item:hover {
+      background: rgba(1, 229, 229, 0.1);
+      color: #01E5E5;
+    }
+    .pxl-header-custom .dropdown-item-title {
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .pxl-header-custom .dropdown-item-desc {
+      font-size: 12px;
+      color: #888;
+    }
+    .pxl-header-custom .dropdown-divider {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.1);
+      margin: 8px 0;
+    }
+    .pxl-header-custom .header-buttons {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .pxl-header-custom .btn-signin {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+    .pxl-header-custom .btn-signin:hover {
+      border-color: #01E5E5;
+      color: #01E5E5;
+    }
+    .pxl-header-custom .btn-trial {
+      background: linear-gradient(135deg, #01E5E5, #008787);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(1, 229, 229, 0.3);
+    }
+    .pxl-header-custom .btn-trial:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(1, 229, 229, 0.4);
+    }
+    .pxl-header-custom .mobile-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 10px;
+    }
+    .pxl-header-custom .mobile-toggle span {
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      transition: all 0.3s;
+    }
+    @media (max-width: 1024px) {
+      .pxl-header-custom nav {
+        display: none;
+      }
+      .pxl-header-custom .mobile-toggle {
+        display: flex;
+      }
+    }
+  </style>
+  
+  <div class="header-container">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="https://marketingtool.pro">
+        <img src="../wp-content/uploads/2025/06/logo-home-6-1.webp" alt="MarketingTool Pro">
+        <span class="logo-text">MarketingTool Pro</span>
+      </a>
+    </div>
+    
+    <!-- Navigation -->
+    <nav>
+      <!-- Home -->
+      <div class="nav-item">
+        <a href="https://marketingtool.pro" class="nav-link">Home</a>
+      </div>
+      
+      <!-- Services -->
+      <div class="nav-item">
+        <a href="#" class="nav-link">
+          Services
+          <svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="https://marketingtool.pro/optimization" class="dropdown-item">
+            <div class="dropdown-item-title">Optimization</div>
+            <div class="dropdown-item-desc">AI-powered campaign optimization</div>
+          </a>
+          <a href="https://marketingtool.pro/ai-ads" class="dropdown-item">
+            <div class="dropdown-item-title">AI Ads</div>
+            <div class="dropdown-item-desc">Generate high-converting ads with AI</div>
+          </a>
+          <a href="https://marketingtool.pro/tracking" class="dropdown-item">
+            <div class="dropdown-item-title">Tracking & Analytics</div>
+            <div class="dropdown-item-desc">Real-time performance tracking</div>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Resources -->
+      <div class="nav-item">
+        <a href="#" class="nav-link">
+          Resources
+          <svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="https://marketingtool.pro/case-studies" class="dropdown-item">
+            <div class="dropdown-item-title">Account Audit Report</div>
+            <div class="dropdown-item-desc">Get your free PPC audit</div>
+          </a>
+          <a href="https://marketingtool.pro/analytics-workflows" class="dropdown-item">
+            <div class="dropdown-item-title">Analytics Workflows</div>
+            <div class="dropdown-item-desc">Test-drive our free reporting</div>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="https://marketingtool.pro/ad-library" class="dropdown-item">
+            <div class="dropdown-item-title">Free Tools</div>
+            <div class="dropdown-item-desc">Discover our free marketing tools</div>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Blog -->
+      <div class="nav-item">
+        <a href="https://marketingtool.pro/blog" class="nav-link">Blog</a>
+      </div>
+      
+      <!-- Company -->
+      <div class="nav-item">
+        <a href="#" class="nav-link">
+          Company
+          <svg viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="https://app.marketingtool.pro/help" class="dropdown-item">
+            <div class="dropdown-item-title">Help Center</div>
+            <div class="dropdown-item-desc">Get support and documentation</div>
+          </a>
+          <a href="https://marketingtool.pro/changelog" class="dropdown-item">
+            <div class="dropdown-item-title">Changelog</div>
+            <div class="dropdown-item-desc">Latest updates and features</div>
+          </a>
+          <a href="https://marketingtool.pro/affiliate" class="dropdown-item">
+            <div class="dropdown-item-title">Affiliate Program</div>
+            <div class="dropdown-item-desc">Earn by referring customers</div>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="https://marketingtool.pro/contact" class="dropdown-item">
+            <div class="dropdown-item-title">Contact Us</div>
+          </a>
+          <a href="https://marketingtool.pro/pricing" class="dropdown-item">
+            <div class="dropdown-item-title">Pricing</div>
+          </a>
+          <a href="https://marketingtool.pro/about-us" class="dropdown-item">
+            <div class="dropdown-item-title">About Us</div>
+          </a>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Buttons -->
+    <div class="header-buttons">
+      <a href="https://app.marketingtool.pro/auth/login" class="btn-signin">Sign In</a>
+      <a href="https://app.marketingtool.pro/auth/signup" class="btn-trial">Free Trial</a>
+    </div>
+    
+    <!-- Mobile Toggle -->
+    <div class="mobile-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>

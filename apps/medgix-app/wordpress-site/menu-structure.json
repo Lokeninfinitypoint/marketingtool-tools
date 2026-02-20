@@ -1,0 +1,89 @@
+{
+  "primary_menu": {
+    "items": [
+      {
+        "title": "Home",
+        "url": "/"
+      },
+      {
+        "title": "Services",
+        "url": "/services"
+      },
+      {
+        "title": "Resources",
+        "url": "/resources",
+        "children": [
+          {
+            "title": "Read original PPC research",
+            "url": "/resources/ppc-research"
+          },
+          {
+            "title": "Account audit report",
+            "url": "/resources/account-audit"
+          },
+          {
+            "title": "Get your free PPC audit",
+            "url": "/resources/free-ppc-audit"
+          },
+          {
+            "title": "Test-drive our free reporting",
+            "url": "/resources/free-reporting"
+          },
+          {
+            "title": "Free tools",
+            "url": "/resources/free-tools"
+          },
+          {
+            "title": "Discover",
+            "url": "/resources/discover"
+          }
+        ]
+      },
+      {
+        "title": "Blog",
+        "url": "/blog"
+      },
+      {
+        "title": "Company",
+        "url": "/company",
+        "children": [
+          {
+            "title": "Help Center",
+            "url": "https://app.marketingtool.pro",
+            "external": true
+          },
+          {
+            "title": "Changelog",
+            "url": "/company/changelog"
+          },
+          {
+            "title": "Affiliate Program",
+            "url": "/company/affiliate"
+          },
+          {
+            "title": "Contact Us",
+            "url": "/company/contact"
+          },
+          {
+            "title": "Pricing",
+            "url": "/company/pricing"
+          },
+          {
+            "title": "About Us",
+            "url": "/company/about-us"
+          }
+        ]
+      },
+      {
+        "title": "Sign In",
+        "url": "https://app.marketingtool.pro/login",
+        "class": "btn-signin"
+      },
+      {
+        "title": "Free Trial",
+        "url": "https://app.marketingtool.pro/signup",
+        "class": "btn-trial"
+      }
+    ]
+  }
+}
